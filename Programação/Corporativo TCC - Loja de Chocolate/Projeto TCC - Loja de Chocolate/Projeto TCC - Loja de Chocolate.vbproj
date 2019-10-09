@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C104B339-DEBB-4031-865A-0EB125F687E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Projeto_TCC___Loja_de_Chocolate.My.MyApplication</StartupObject>
+    <RootNamespace>Projeto_TCC___Loja_de_Chocolate</RootNamespace>
+    <AssemblyName>Projeto TCC - Loja de Chocolate</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Projeto TCC - Loja de Chocolate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Projeto TCC - Loja de Chocolate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backup\Cls_Backup.vb" />
+    <Compile Include="Backup\Backup.Designer.vb">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Backup\Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classe Bloqueio_Desbloqueio\Cls_Blo_Des.vb" />
+    <Compile Include="Classe Limpar\Cls_Limpar.vb" />
+    <Compile Include="Classes de Consistência\Validar_CNPJ.vb" />
+    <Compile Include="Classes de Consistência\Validar_CPF.vb" />
+    <Compile Include="Classes de Consistência\Validar_Email.vb" />
+    <Compile Include="Cliente\Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Cadastro_Cliente.designer.vb">
+      <DependentUpon>Cadastro_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\Cadastro_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\Classe\ClsCliente.vb" />
+    <Compile Include="Classes de Conexão\Cls_Conexao.vb" />
+    <Compile Include="Compras\Item_compra.Designer.vb">
+      <DependentUpon>Item_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Item_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque\Classe\Cls_Estoque.vb" />
+    <Compile Include="Estoque\Listar_Estoque.Designer.vb">
+      <DependentUpon>Listar_Estoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Listar_Estoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fale Conosco\Cls_FaleConosco.vb" />
+    <Compile Include="Fale Conosco\Fale Conosco.Designer.vb">
+      <DependentUpon>Fale Conosco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fale Conosco\Fale Conosco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\Contato\Contato.Designer.vb">
+      <DependentUpon>Contato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\Contato\Contato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Classe\Cls_login.vb" />
+    <Compile Include="Compras\Classe\ClsItem_Compra.vb" />
+    <Compile Include="Compras\Classe\Cls_Compra.vb" />
+    <Compile Include="Compras\Compras.Designer.vb">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contas a Pagar\Cadastrar Tipo de Conta.Designer.vb">
+      <DependentUpon>Cadastrar Tipo de Conta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contas a Pagar\Cadastrar Tipo de Conta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contas a Pagar\Classe\ClsContas.vb" />
+    <Compile Include="Departamento\Classe\ClsDepartamento.vb" />
+    <Compile Include="Departamento\Criar um Departamento.designer.vb">
+      <DependentUpon>Criar um Departamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento\Criar um Departamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamento\Departamento.Designer.vb">
+      <DependentUpon>Departamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Departamento\Departamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque\Cadastro Estoque.Designer.vb">
+      <DependentUpon>Cadastro Estoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Cadastro Estoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\Classe\ClsFornecedor.vb" />
+    <Compile Include="Fornecedor\Contato\Classe\ClsContato.vb" />
+    <Compile Include="Fornecedor\Contato\Contato_Fornecedor.Designer.vb">
+      <DependentUpon>Contato_Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\Contato\Contato_Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\Fornecedor.Designer.vb">
+      <DependentUpon>Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\Cadastro_Fornecedor.designer.vb">
+      <DependentUpon>Cadastro_Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\Cadastro_Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\Cadastrar_Funcionario.designer.vb">
+      <DependentUpon>Cadastrar_Funcionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\Cadastrar_Funcionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\Classe\ClsFuncionario.vb" />
+    <Compile Include="Login\Classe\Cls_Cadastro_Login.vb" />
+    <Compile Include="Login\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\ClsMenu.vb" />
+    <Compile Include="Produtos\Classe\Cls_Produto.vb" />
+    <Compile Include="RelatorioVenda.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioVenda.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Senha  do Gerente.Designer.vb">
+      <DependentUpon>Senha  do Gerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Senha  do Gerente.vb">
+    </Compile>
+    <Compile Include="Login\Cadastro de Senha.Designer.vb">
+      <DependentUpon>Cadastro de Senha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Cadastro de Senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\Funcionarios.designer.vb">
+      <DependentUpon>Funcionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\Funcionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Efetuar_Login.Designer.vb">
+      <DependentUpon>Efetuar_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Efetuar_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Menu Principal - Gerente.Designer.vb">
+      <DependentUpon>Menu Principal - Gerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Menu Principal - Gerente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\Menu Principal.Designer.vb">
+      <DependentUpon>Menu Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Menu Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Produtos\Cadastrar o Produto.Designer.vb">
+      <DependentUpon>Cadastrar o Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Cadastrar o Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Produtos.Designer.vb">
+      <DependentUpon>Produtos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Produtos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela Inicial.Designer.vb">
+      <DependentUpon>Tela Inicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tela Inicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas\Classe\ClsItem_Venda.vb" />
+    <Compile Include="Vendas\Classe\ClsVendas.vb" />
+    <Compile Include="Vendas\Classe\ClsRecebimento.vb" />
+    <Compile Include="Vendas\Encerramento_Vendas.Designer.vb">
+      <DependentUpon>Encerramento_Vendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas\Encerramento_Vendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas\Selecionar Venda.Designer.vb">
+      <DependentUpon>Selecionar Venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas\Selecionar Venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas\Vendas.designer.vb">
+      <DependentUpon>Vendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas\Vendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Backup\Backup.resx">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Cliente.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\Cadastro_Cliente.resx">
+      <DependentUpon>Cadastro_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Compras.resx">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\Item_compra.resx">
+      <DependentUpon>Item_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contas a Pagar\Cadastrar Tipo de Conta.resx">
+      <DependentUpon>Cadastrar Tipo de Conta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento\Criar um Departamento.resx">
+      <DependentUpon>Criar um Departamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamento\Departamento.resx">
+      <DependentUpon>Departamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque\Cadastro Estoque.resx">
+      <DependentUpon>Cadastro Estoque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque\Listar_Estoque.resx">
+      <DependentUpon>Listar_Estoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fale Conosco\Fale Conosco.resx">
+      <DependentUpon>Fale Conosco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor\Contato\Contato.resx">
+      <DependentUpon>Contato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor\Contato\Contato_Fornecedor.resx">
+      <DependentUpon>Contato_Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor\Fornecedor.resx">
+      <DependentUpon>Fornecedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor\Cadastro_Fornecedor.resx">
+      <DependentUpon>Cadastro_Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\Cadastrar_Funcionario.resx">
+      <DependentUpon>Cadastrar_Funcionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioVenda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioVenda.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Senha  do Gerente.resx">
+      <DependentUpon>Senha  do Gerente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Cadastro de Senha.resx">
+      <DependentUpon>Cadastro de Senha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\Funcionarios.resx">
+      <DependentUpon>Funcionarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Efetuar_Login.resx">
+      <DependentUpon>Efetuar_Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Menu Principal - Gerente.resx">
+      <DependentUpon>Menu Principal - Gerente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Menu Principal.resx">
+      <DependentUpon>Menu Principal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Cadastrar o Produto.resx">
+      <DependentUpon>Cadastrar o Produto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Produtos.resx">
+      <DependentUpon>Produtos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela Inicial.resx">
+      <DependentUpon>Tela Inicial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas\Encerramento_Vendas.resx">
+      <DependentUpon>Encerramento_Vendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas\Selecionar Venda.resx">
+      <DependentUpon>Selecionar Venda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas\Vendas.resx">
+      <DependentUpon>Vendas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoTeste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\mmm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1268109155_79345989_1-Fotos-de--OVOS-DE-PaSCOA.jpg" />
+    <Content Include="Resources\1yr9hn1qyu3jg5jg[1].jpg" />
+    <Content Include="Resources\1yr9hn1qyu3jg5jg[1]1.jpg" />
+    <Content Include="Resources\42211058_2-Pirulitos-de-Chocolates-Bombons-Recheados-Sao-Goncalo[1].jpg" />
+    <Content Include="Resources\chocolate.jpg" />
+    <Content Include="Resources\chocolatesparapresente.jpg" />
+    <Content Include="Resources\Fetiche por Chocolate.jpg" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\icontexto-webdev-add-032x032.png" />
+    <None Include="Resources\icontexto-webdev-file-032x032.png" />
+    <None Include="Resources\icontexto-webdev-reload-032x032.png" />
+    <None Include="Resources\icontexto-webdev-cancel-032x032.png" />
+    <None Include="Resources\icontexto-webdev-security-128x128.png" />
+    <None Include="Resources\icontexto-webdev-security-048x048.png" />
+    <None Include="Resources\icontexto-webdev-search-032x032.png" />
+    <None Include="Resources\icontexto-webdev-ok-032x032.png" />
+    <None Include="Resources\icontexto-webdev-remove-032x032.png" />
+    <Content Include="Resources\Imagem 1.jpg" />
+    <Content Include="Resources\Imagem 11.jpg" />
+    <Content Include="Resources\Imagem 2.bmp" />
+    <Content Include="Resources\imagesCA0XAT1Z.jpg" />
+    <Content Include="Resources\imagesCA2FT7XO.jpg" />
+    <Content Include="Resources\imagesCA3Z3Z21.jpg" />
+    <Content Include="Resources\imagesCA4FILC0.jpg" />
+    <Content Include="Resources\imagesCA5QN70I.jpg" />
+    <Content Include="Resources\imagesCA8QSJZ1.jpg" />
+    <Content Include="Resources\imagesCA96EUHJ.jpg" />
+    <Content Include="Resources\imagesCAER69H0.jpg" />
+    <Content Include="Resources\imagesCAIW83AY.jpg" />
+    <Content Include="Resources\imagesCAKMGU7Z.jpg" />
+    <Content Include="Resources\imagesCAKVUPQV.jpg" />
+    <Content Include="Resources\imagesCALVYHAZ.jpg" />
+    <Content Include="Resources\imagesCALVYHAZ1.jpg" />
+    <Content Include="Resources\imagesCAVG6EWC.jpg" />
+    <Content Include="Resources\imagesCAZYREKH.jpg" />
+    <None Include="Resources\logos completos - Cópia.jpg" />
+    <None Include="Resources\logoooooooo2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
